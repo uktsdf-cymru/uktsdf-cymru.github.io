@@ -1,0 +1,21 @@
+.NavBar {
+    
+}
+
+ul {
+    background-color: #010120;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: center;   
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul > img {
+    height: 100%;
+    width: auto
+}
