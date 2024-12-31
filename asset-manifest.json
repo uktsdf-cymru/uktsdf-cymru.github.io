@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.211ae416.css",
-    "main.js": "/static/js/main.08410981.js",
+    "main.css": "/static/css/main.7607eb32.css",
+    "main.js": "/static/js/main.7f9793f3.js",
     "static/js/453.6654179d.chunk.js": "/static/js/453.6654179d.chunk.js",
-    "static/media/tsd-c_logo.jpg": "/static/media/tsd-c_logo.deaf0d0f41ebe4935204.jpg",
+    "static/media/tsd-c_logo.png": "/static/media/tsd-c_logo.253989cee69517c46adf.png",
+    "static/media/bg.jpg": "/static/media/bg.7d7654fee4079ac99352.jpg",
+    "static/media/tsd-c_logo.jpg": "/static/media/tsd-c_logo.e40d0803ccdb68b32c5b.jpg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.211ae416.css.map": "/static/css/main.211ae416.css.map",
-    "main.08410981.js.map": "/static/js/main.08410981.js.map",
+    "main.7607eb32.css.map": "/static/css/main.7607eb32.css.map",
+    "main.7f9793f3.js.map": "/static/js/main.7f9793f3.js.map",
     "453.6654179d.chunk.js.map": "/static/js/453.6654179d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.211ae416.css",
-    "static/js/main.08410981.js"
+    "static/css/main.7607eb32.css",
+    "static/js/main.7f9793f3.js"
   ]
 }
