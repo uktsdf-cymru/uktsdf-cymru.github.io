@@ -4,6 +4,7 @@ import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
 import Instructors from './components/Instructors';
 import Home from './components/Home';
+import Classes from './components/Classes'
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
           <Routes>
                     <Route path="/" element={<Home/>} />
                     <Route path="/team" element={<Instructors/>} />
-                    <Route path="/classes" element={<Home/>} />
+                    <Route path="/classes" element={<Classes/>} />
                     <Route path="/contact" element={<Home/>} />
           </Routes>
           <Footer />
