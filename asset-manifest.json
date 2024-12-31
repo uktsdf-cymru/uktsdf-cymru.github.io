@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0f9bc8c.css",
-    "main.js": "/static/js/main.1153624c.js",
+    "main.css": "/static/css/main.5b55a6a7.css",
+    "main.js": "/static/js/main.85e3ffa1.js",
     "static/js/453.6654179d.chunk.js": "/static/js/453.6654179d.chunk.js",
     "static/media/tsd-c_logo.png": "/static/media/tsd-c_logo.253989cee69517c46adf.png",
     "static/media/bg.jpg": "/static/media/bg.7d7654fee4079ac99352.jpg",
@@ -11,12 +11,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.e0f9bc8c.css.map": "/static/css/main.e0f9bc8c.css.map",
-    "main.1153624c.js.map": "/static/js/main.1153624c.js.map",
+    "main.5b55a6a7.css.map": "/static/css/main.5b55a6a7.css.map",
+    "main.85e3ffa1.js.map": "/static/js/main.85e3ffa1.js.map",
     "453.6654179d.chunk.js.map": "/static/js/453.6654179d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0f9bc8c.css",
-    "static/js/main.1153624c.js"
+    "static/css/main.5b55a6a7.css",
+    "static/js/main.85e3ffa1.js"
   ]
 }
