@@ -1,5 +1,7 @@
 .NavBar {
-    z-index: 10;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 
 .NavBar ul {
@@ -7,8 +9,6 @@
     min-height: 5vh;
     align-items: center;
     justify-content: center;   
-    position: fixed;
-    width: 100%;
     list-style-type: none;
     overflow: hidden;
     margin: 0;

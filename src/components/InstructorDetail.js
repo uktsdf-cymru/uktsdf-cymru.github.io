@@ -3,7 +3,7 @@ import './InstructorDetail.css';
 
 const InstructorDetail = ({ instructor, onClose }) => {
     return (
-        <div className="modal">
+        <div className="modal" onClick={onClose}>
             <div className="modal-content">
                 <span className="close" onClick={onClose}>&times;</span>
                 <div className="instructor-detail">

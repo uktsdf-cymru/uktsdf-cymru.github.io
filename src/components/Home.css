@@ -1,0 +1,35 @@
+.App-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    transition: background-image 2s ease-in-out; /* Smooth fade */
+}
+
+    .App-content.initial-bg {
+        background-color: white; /* Initial white background */
+        background-size: cover;
+        background-position: center;
+        animation: fade-in 5s ease-in-out;
+    }
+
+    .App-content.final-bg {
+        background-size: cover;
+        background-position: center;
+        animation: fade-in 5s ease-in-out;
+    }
+
+.App-logo {
+    height: 60vh;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
