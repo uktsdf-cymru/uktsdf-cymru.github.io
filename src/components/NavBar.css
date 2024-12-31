@@ -1,8 +1,8 @@
 .NavBar {
-    
+    z-index: 10;
 }
 
-ul {
+.NavBar ul {
     background-color: #010120;
     min-height: 5vh;
     align-items: center;
@@ -15,7 +15,7 @@ ul {
     padding: 0;
 }
 
-ul > img {
+.NavBar ul > img {
     height: 100%;
-    width: auto
+    width: auto;
 }

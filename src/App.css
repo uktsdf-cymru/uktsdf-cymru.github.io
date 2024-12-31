@@ -13,11 +13,12 @@
   }
 }
 
-.App-header {
+.App-content {
   background-color: #FFFFFF;
   min-height: 100vh;
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);

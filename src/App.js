@@ -1,17 +1,24 @@
-import logo from './tsd-c_logo.jpg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
+import Instructors from './components/Instructors';
+import Home from './components/Home';
 
 function App() {
-  return (
-    <div className="App">
+    return (
+      <Router>
+        <div className="App">
           <NavBar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" /> 
-      </header>
-      <Footer />
-    </div>
+          <Routes>
+                    <Route path="/" element={<Home/>} />
+                    <Route path="/team" element={<Instructors/>} />
+                    <Route path="/classes" element={<Home/>} />
+                    <Route path="/contact" element={<Home/>} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
   );
 }
 
