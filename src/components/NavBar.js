@@ -7,62 +7,29 @@ import { FaFacebook, FaYoutube, FaTiktok } from 'react-icons/fa'; // Import icon
 
 
 function NavBar() {
-    const [showMenu, setShowMenu] = useState(false);
-    const [isBurgerMenu, setIsBurgerMenu] = useState(false);
-
-    const toggleMenu = () => setShowMenu(!showMenu);
-
-    useEffect(() => {
-        const debounce = (fn, delay) => {
-            let timeout;
-            return (...args) => {
-                clearTimeout(timeout);
-                timeout = setTimeout(() => fn(...args), delay);
-            };
-        };
-
-        const handleResize = debounce(() => {
-            const nav = document.querySelector('.NavBar ul');
-            const items = document.querySelectorAll('.NavBarItem');
-            if (!nav || items.length === 0) {
-                return; // Exit if elements are not found
-            }
-            const navWidth = nav.offsetWidth;
-            const itemsWidth = Array.from(items).reduce((total, item) => total + item.offsetWidth, 0);
-            setIsBurgerMenu(itemsWidth > navWidth);
-        }, 200);
-
-        handleResize(); // Initial call to set the state based on the current size
-        window.addEventListener('resize', handleResize);
-
-        return () => window.removeEventListener('resize', handleResize); // Cleanup listener
-    }, []);
-
+    
     return (
         <>
             <nav className="NavBar">
                 <div className="logo-container">
                     <img src={logo} alt="Logo" className="logo" />
                 </div>
-                {!isBurgerMenu ? (
-                <ul>
-                    <NavBarItem label="HOME" action="/"/>
+                <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+                    <a  href="/">Home</a>
+                    <a  href="/about">About</a>
+                    <a  href="/team">Meet The Team</a>
+                    <a href="/classes">Classes</a> 
+                    <a  href="/library">Student Library</a> 
+                    <a  href="/contact">Contact Us</a> 
+                </Menu>
+                <ul className="navbar-items">
+                    <NavBarItem label="Home" action="/"/>
                     <NavBarItem label="About" action="/about"/>
                     <NavBarItem label="Meet The Team" action="/team" />
                     <NavBarItem label="Classes" action="/classes" />
                     <NavBarItem label="Student Library" action="/library" />
                     <NavBarItem label="Contact Us" action="/contact" />
                 </ul>
-                ) : (
-                    <Menu>
-                            <NavBarItem label="HOME" action="/" />
-                            <NavBarItem label="About" action="/about" />
-                            <NavBarItem label="Meet The Team" action="/team" />
-                            <NavBarItem label="Classes" action="/classes" />
-                            <NavBarItem label="Student Library" action="/library" />
-                            <NavBarItem label="Contact Us" action="/contact" />
-                    </Menu>
-                )}
                 <div className="social-icons">
                     <a
                         href="https://www.facebook.com/regiononewales"

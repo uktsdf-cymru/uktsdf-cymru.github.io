@@ -14,22 +14,26 @@ import Contact from './components/Contact'
 
 function App() {
     return (
-      <Router>
-        <ScrollToTop/>
-        <div className="App">
-          <NavBar />
-          <Routes>
-                    <Route path="/" element={<Home/>} />
-                    <Route path="/about" element={<About/>} />
-                    <Route path="/team" element={<Instructors />} />
-                    <Route path="/classes" element={<Classes />} />
-                    <Route path="/library" element={<Library/> } />
-                    <Route path="/contact" element={<Contact/>} />
-          </Routes>
-          <Footer />
+        <div id="outer-container">
+            <Router>
+                <ScrollToTop />
+                <div className="App">
+                    <NavBar />
+                    <div id="page-wrap">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/team" element={<Instructors />} />
+                            <Route path="/classes" element={<Classes />} />
+                            <Route path="/library" element={<Library />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Routes>
+                    </div>
+                    <Footer />
+                </div>
+            </Router>
         </div>
-      </Router>
-  );
+    );
 }
 
 export default App;
