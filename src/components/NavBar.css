@@ -2,15 +2,17 @@
     z-index: 1000;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensure space between navigation items and social icons */
+    align-items: center;
+    background-color: #010120;
+    padding: 0 10px; /* Add some padding on the sides */
 }
 
 .NavBar ul {
-    background-color: #010120;
-    min-height: 5vh;
+    display: flex; /* Use flexbox to align items horizontally */
     align-items: center;
-    justify-content: center;   
     list-style-type: none;
-    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -18,4 +20,40 @@
 .NavBar ul > img {
     height: 100%;
     width: auto;
+}
+
+.NavBar .NavBar-items {
+    display: flex;
+    gap: 15px; /* Add spacing between navigation items */
+}
+
+.NavBar .NavBar-items > li {
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.NavBar .NavBar-items > li:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+.NavBar .social-icons {
+    display: flex;
+    gap: 15px; /* Add spacing between social media icons */
+    margin-right: 20px;
+    color: #fff
+}
+
+.NavBar .social-icons > a {
+    color: #fff; /* Icon color */
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.NavBar .social-icons > a:hover {
+    color: #1e9df1; /* Change color on hover */
 }
