@@ -1,4 +1,5 @@
 ﻿import React, { useState, useEffect } from 'react';
+import { bubble as Menu } from 'react-burger-menu';
 import './NavBar.css';
 import NavBarItem from './NavBarItem.js'
 import logo from '../tsd-c_logo.png';
@@ -12,20 +13,29 @@ function NavBar() {
     const toggleMenu = () => setShowMenu(!showMenu);
 
     useEffect(() => {
-        const handleResize = () => {
-            const navWidth = document.querySelector('.NavBar ul').offsetWidth;
-            const itemsWidth = Array.from(
-                document.querySelectorAll('.NavBarItem')
-            ).reduce((total, item) => total + item.offsetWidth, 0);
-
-            setIsBurgerMenu(itemsWidth > navWidth);
+        const debounce = (fn, delay) => {
+            let timeout;
+            return (...args) => {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => fn(...args), delay);
+            };
         };
 
-        // Check on mount and window resize
-        handleResize();
+        const handleResize = debounce(() => {
+            const nav = document.querySelector('.NavBar ul');
+            const items = document.querySelectorAll('.NavBarItem');
+            if (!nav || items.length === 0) {
+                return; // Exit if elements are not found
+            }
+            const navWidth = nav.offsetWidth;
+            const itemsWidth = Array.from(items).reduce((total, item) => total + item.offsetWidth, 0);
+            setIsBurgerMenu(itemsWidth > navWidth);
+        }, 200);
+
+        handleResize(); // Initial call to set the state based on the current size
         window.addEventListener('resize', handleResize);
 
-        return () => window.removeEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize); // Cleanup listener
     }, []);
 
     return (
@@ -44,21 +54,14 @@ function NavBar() {
                     <NavBarItem label="Contact Us" action="/contact" />
                 </ul>
                 ) : (
-                    <div className="burger-menu">
-                        <button onClick={toggleMenu} className="burger-icon">
-                            M
-                        </button>
-                        {showMenu && (
-                            <div className="dropdown-menu">
-                                    <NavBarItem label="HOME" action="/" />
-                                    <NavBarItem label="About" action="/about" />
-                                    <NavBarItem label="Meet The Team" action="/team" />
-                                    <NavBarItem label="Classes" action="/classes" />
-                                    <NavBarItem label="Student Library" action="/library" />
-                                    <NavBarItem label="Contact Us" action="/contact" />
-                            </div>
-                        )}
-                    </div>
+                    <Menu>
+                            <NavBarItem label="HOME" action="/" />
+                            <NavBarItem label="About" action="/about" />
+                            <NavBarItem label="Meet The Team" action="/team" />
+                            <NavBarItem label="Classes" action="/classes" />
+                            <NavBarItem label="Student Library" action="/library" />
+                            <NavBarItem label="Contact Us" action="/contact" />
+                    </Menu>
                 )}
                 <div className="social-icons">
                     <a

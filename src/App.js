@@ -3,6 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
 
+import ScrollToTop from './components/ScrollToTop';
+
 import Home from './components/Home';
 import About from './components/About'
 import Instructors from './components/Instructors';
@@ -13,6 +15,7 @@ import Contact from './components/Contact'
 function App() {
     return (
       <Router>
+        <ScrollToTop/>
         <div className="App">
           <NavBar />
           <Routes>

@@ -95,3 +95,27 @@
     max-height: 10vh;
     max-width: 10vh;
 }
+
+@media screen and (max-width: 768px) {
+    .NavBar ul {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+bmBurgerButton {
+    position: 'fixed';
+    width: '36px';
+    height: '30px';
+    left: '16px';
+    top: '136px';
+}
+
+.bm-menu {
+    background: #010120;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}

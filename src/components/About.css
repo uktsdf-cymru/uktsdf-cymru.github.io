@@ -29,6 +29,7 @@
 .section-content {
     font-size: 1rem;
     white-space: pre-line; /* Preserves line breaks */
+    padding: 10px;
 }
 
 /* Landscape Orientation Styling */
