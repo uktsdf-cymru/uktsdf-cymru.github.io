@@ -26,6 +26,55 @@ const About = () => {
             A substantial portion of that success must be credited to the rigorously planned teaching method, which was introduced by our President, Grand Master Lee and implemented by the Executive Committee, Master instructors and assistant instructors. Throughout our period of expansion our basic priority has remained: to provide the best possible environment, technically and socially, for everyone who teaches and trains with the United Kingdom Tang Soo (Soo Bahk) Do Federation.
             `,
         },
+        {
+            title: "Benefits of Training with us",
+            content: `"I hear and I forget; I see, and I remember; I do, and I understand." 
+            - Confucius.
+
+            Self confidence
+
+            Improve self-esteem.
+
+            Self-empowerment.
+
+            Physical fitness and self-improvement.
+
+            Self defence.
+
+            Peace of mind.
+
+            Enhanced awareness.
+
+            Betterment of health and longevity of life.`,
+        },
+        {
+            title: "Our style - Joong Gan Ryu (Middle Way Style)",
+            content: `Joong Gan Ryu (Middle Way Style) Utilises hard / soft, light / heavy, active, and passive types of movements. The softer / heavier movements are like the northern Chinese styles, where the lighter / active movements are like the Southern Chinese styles. All these factors make Soo Bahk Do a very versatile, challenging martial art.`,
+        },
+        {
+            title: "Main aims and basic principles of our federation",
+            content: `1. Be loyal to your king and country.
+
+                      2. Obedience to parents and elders.
+
+                      3. Respect your instructor.
+
+                      4. Self-control.
+
+                      5. Never misuse your art.`,
+        },
+        {
+            title: "Main Aims laid down by the federation",
+            content: `1. Foster goodwill and friendship among affiliated members.
+
+                    2. Supervise and maintain the rules and regulations of Tang Soo Do.
+
+                    3. Organise National and international events or championships.
+
+                    4. Organise proper guidance on training programmes.
+
+                    5. To assist in the formation of Tang Soo Do clubs in the United Kingdom.`,
+        },
     ];
 
     useEffect(() => {
