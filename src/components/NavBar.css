@@ -57,3 +57,41 @@
 .NavBar .social-icons > a:hover {
     color: #1e9df1; /* Change color on hover */
 }
+
+.burger-menu {
+    display: none;
+}
+
+.burger-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 5vh;
+    right: 1rem;
+    background-color: #010120;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 9999;
+}
+
+.dropdown-menu > * {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.logo-container {
+    max-height: 10vh;
+}
+
+.logo {
+    max-height: 10vh;
+    max-width: 10vh;
+}

@@ -6,7 +6,7 @@
     align-items: center; /* Center items horizontally */
     min-height: 100vh; /* Ensure the container fills the full height of the viewport */
     margin: 0 auto;
-    padding-top: 5vh;
+    padding-top: 15vh;
     box-sizing: border-box;
     color: black;
 }
