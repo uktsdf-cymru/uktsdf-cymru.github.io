@@ -8,6 +8,7 @@
     font-size: calc(10px + 1vmin);
     color: white;
     border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
     float: left;
     text-transform: uppercase;
 }
