@@ -8,19 +8,13 @@ url: "https://uktsdf-cymru.github.io" # Your GitHub Pages URL
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-json
+  - jekyll-json-feed
 
-# Output JSON for blog posts
-json_endpoint: "/blog.json"
+# JSON Feed settings
 json_feed:
-  posts:
-    - title
-    - url
-    - excerpt
-    - date
-
-# Permalinks
-permalink: pretty
+  path: "blog.json" # Path to the JSON feed (relative to your site root)
+  limit: 10         # Number of posts to include in the feed
+  hub: ""           # Optional: WebSub hub URL
 
 # Collections (for blog posts)
 collections:
@@ -42,6 +36,9 @@ defaults:
     values:
       layout: post
       comments: true
+
+# Permalinks
+permalink: pretty
 
 # Pagination settings (optional)
 paginate: 5
