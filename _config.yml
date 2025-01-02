@@ -1,4 +1,60 @@
+# Site settings
+title: "Your Blog Title"
+description: "A brief description of your blog."
+baseurl: "" # Set to the subpath if hosting under a subdirectory
+url: "https://uktsdf-cynru.github.io" # Your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+theme: minima
 plugins:
   - jekyll-json
 
+# Output JSON for blog posts
 json_endpoint: "/blog.json"
+json_feed:
+  posts:
+    - title
+    - url
+    - excerpt
+    - date
+
+# Permalinks
+permalink: pretty
+
+# Collections (for blog posts)
+collections:
+  posts:
+    output: true
+
+# Exclude files and folders from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Defaults for collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+
+# Pagination settings (optional)
+paginate: 5
+paginate_path: "/page:num/"
+
+# Theme customization
+minima:
+  include_navbar_in_header: true
+  include_footer_in_header: false
+  navbar:
+    title: "Your Blog"
+    links:
+      - title: "Home"
+        url: "/"
+      - title: "About"
+        url: "/about/"
