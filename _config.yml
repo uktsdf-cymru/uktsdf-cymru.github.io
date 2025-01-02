@@ -7,14 +7,6 @@ url: "https://uktsdf-cymru.github.io" # Your GitHub Pages URL
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-json-feed
-
-# JSON Feed settings
-json_feed:
-  path: "blog.json" # Path to the JSON feed (relative to your site root)
-  limit: 10         # Number of posts to include in the feed
-  hub: ""           # Optional: WebSub hub URL
 
 # Collections (for blog posts)
 collections:
