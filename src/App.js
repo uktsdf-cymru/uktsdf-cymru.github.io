@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
@@ -22,11 +22,12 @@ function App() {
                     <div id="page-wrap">
                         <Routes>
                             <Route path="/" element={<Home />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/team" element={<Instructors />} />
-                            <Route path="/classes" element={<Classes />} />
-                            <Route path="/library" element={<Library />} />
-                            <Route path="/contact" element={<Contact />} />
+                            <Route path="about" element={<About />} />
+                            <Route path="team" element={<Instructors />} />
+                            <Route path="classes" element={<Classes />} />
+                            <Route path="library" element={<Library />} />
+                            <Route path="contact" element={<Contact />} />
+                            <Route path="*" element={<Home />} />
                         </Routes>
                     </div>
                     <Footer />
