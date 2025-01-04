@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import logo from '../tsd-c_logo.png';
 import backgroundImage from '../bg.jpg';
 import './Home.css';
+import BlogFeed from './BlogFeed';
 
 function Home() {
     const [backgroundClass, setBackgroundClass] = useState('initial-bg');
-    const [blogPosts, setBlogPosts] = useState([]);
 
     useEffect(() => {
         // Change background after 2 seconds
@@ -13,14 +13,6 @@ function Home() {
             setBackgroundClass('final-bg');
         }, 2000);
         return () => clearTimeout(timer);
-    }, []);
-
-    useEffect(() => {
-        // Fetch blog posts from Jekyll's JSON endpoint
-        fetch('https://<your-github-pages-url>/blog.json')
-            .then((response) => response.json())
-            .then((data) => setBlogPosts(data))
-            .catch((error) => console.error('Error fetching blog posts:', error));
     }, []);
 
     return (
@@ -37,25 +29,7 @@ function Home() {
                 <button className="cta-button">Get Started</button>
                 */}
             </div>
-
-            {/* Blog section */}
-            <div className="blog-section">
-                {blogPosts.length > 0 ? (
-                    <ul className="blog-list">
-                        {blogPosts.map((post) => (
-                            <li key={post.id} className="blog-post">
-                                <a href={post.url}>{post.title}</a>
-                                <p>
-                                    <small>{new Date(post.date).toLocaleDateString()}</small>
-                                </p>
-                                <p>{post.excerpt}</p>
-                            </li>
-                        ))}
-                    </ul>
-                ) : (
-                    <p>Loading blog posts...</p>
-                )}
-            </div>
+            <BlogFeed/>
         </div>
     );
 }

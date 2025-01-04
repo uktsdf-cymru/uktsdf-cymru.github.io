@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<ul>
+    {% for post in paginator.posts %}
+    <li>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+    </li>
+    {% endfor %}
+</ul>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}">Previous</a>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span>{{ page }}</span>
+    {% else %}
+    <a href="{{ paginator.baseurl }}/page{{ page }}/">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">Next</a>
+    {% endif %}
+</div>

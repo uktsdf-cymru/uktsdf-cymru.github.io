@@ -1,20 +1,12 @@
 # Site settings
-title: "Your Blog Title"
-description: "A brief description of your blog."
+title: ""
+description: ""
 baseurl: "" # Set to the subpath if hosting under a subdirectory
 url: "https://uktsdf-cymru.github.io" # Your GitHub Pages URL
 
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-json-feed
-
-# JSON Feed settings
-json_feed:
-  path: "blog.json" # Path to the JSON feed (relative to your site root)
-  limit: 10         # Number of posts to include in the feed
-  hub: ""           # Optional: WebSub hub URL
 
 # Collections (for blog posts)
 collections:
@@ -42,7 +34,7 @@ permalink: pretty
 
 # Pagination settings (optional)
 paginate: 5
-paginate_path: "/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Theme customization
 minima:
