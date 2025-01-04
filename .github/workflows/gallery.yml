@@ -25,17 +25,11 @@ jobs:
           persist-credentials: false
       - name: Build Gallery 🔧
         run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && thumbsup --config gallery-config.json"
-      - name: Package and upload artifact 📦
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'build_output'
-          name: gh-pages
-      - name: Deploy to Github Pages 🚀
-        uses: actions/deploy-pages@v4
-        with:
-          artifact_name: gh-pages
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Delete artifact 🗑️
-        uses: geekyeggo/delete-artifact@v4
-        with:
-          name: gh-pages
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+            REPO: self
+            BRANCH: gh-pages
+            FOLDER: build_output
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            TARGET_DIR: gallery
