@@ -38,15 +38,8 @@ paginate_path: "/blog/page:num/"
 
 # Theme customization
 minima:
-  include_navbar_in_header: true
+  include_navbar_in_header: false
   include_footer_in_header: false
-  navbar:
-    title: "Your Blog"
-    links:
-      - title: "Home"
-        url: "/"
-      - title: "About"
-        url: "/about/"
 
 imagesurl: "/_gallery/photos/"
 thumbsurl: "/_gallery/thumbs/"
