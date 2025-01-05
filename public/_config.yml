@@ -47,3 +47,6 @@ minima:
         url: "/"
       - title: "About"
         url: "/about/"
+
+imagesurl: "/_gallery/photos/"
+thumbsurl: "/_gallery/thumbs/"
