@@ -4,12 +4,12 @@ on:
     branches:
       - main
     paths:
-      - gallery/**
+      - public/gallery/**
   pull_request:
     branches:
       - main
     paths:
-      - gallery/**
+      - public/gallery/**
 permissions:
   id-token: write
   actions: write
