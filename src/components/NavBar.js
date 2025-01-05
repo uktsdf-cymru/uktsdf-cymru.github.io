@@ -30,6 +30,7 @@ function NavBar() {
                     <Link to="/" onClick={handleLinkClick}>Home</Link>
                     <Link to="about" onClick={handleLinkClick}>About</Link>
                     <Link to="team" onClick={handleLinkClick}>Meet The Team</Link>
+                    <Link to="gallery" onClick={handleLinkClick}>Gallery</Link>
                     <Link to="classes" onClick={handleLinkClick}>Classes</Link>
                     <Link to="library" onClick={handleLinkClick}>Student Library</Link>
                     <Link to="contact" onClick={handleLinkClick}>Contact Us</Link> 
@@ -38,6 +39,7 @@ function NavBar() {
                     <NavBarItem label="Home" action="/"/>
                     <NavBarItem label="About" action="about"/>
                     <NavBarItem label="Meet The Team" action="team" />
+                    <NavBarItem label="Gallery" action="gallery" />
                     <NavBarItem label="Classes" action="classes" />
                     <NavBarItem label="Student Library" action="library" />
                     <NavBarItem label="Contact Us" action="contact" />
