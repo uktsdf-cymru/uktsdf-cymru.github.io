@@ -3,6 +3,7 @@ import logo from '../tsd-c_logo.png';
 import backgroundImage from '../bg.jpg';
 import './Home.css';
 import BlogFeed from './BlogFeed';
+import UpcomingEvents from './UpcomingEvents';
 
 function Home() {
     const [backgroundClass, setBackgroundClass] = useState('initial-bg');
@@ -22,13 +23,15 @@ function Home() {
                 className={`App-content ${backgroundClass}`}
                 style={{ backgroundImage: `url(${backgroundImage})` }}
             >
-                <img src={logo} className="App-logo" alt="logo" />
-                {/*
-                <h1>Welcome to Our Website</h1>
-                <p>Join us and discover the benefits of training today!</p>
-                <button className="cta-button">Get Started</button>
-                */}
+                <div className="cta-container">
+                    <img src={logo} className="App-logo animate-logo" alt="logo" />
+                    <div className="text-container animate-text">
+                        <h1 className="cta-heading">Tang Soo Do Cymru</h1>
+                        <p className="cta-subtext">Join us and discover the benefits of training today!</p>
+                    </div>
+                </div>
             </div>
+            <UpcomingEvents/>
             <BlogFeed/>
         </div>
     );
