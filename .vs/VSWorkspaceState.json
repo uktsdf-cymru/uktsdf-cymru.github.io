@@ -1,9 +1,17 @@
 {
   "ExpandedNodes": [
     "",
+    "\\.github",
+    "\\.github\\workflows",
     "\\public",
-    "\\src"
+    "\\public\\blog",
+    "\\public\\_gallery",
+    "\\public\\_gallery\\photos",
+    "\\public\\_includes",
+    "\\public\\_posts",
+    "\\src",
+    "\\src\\components"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\public\\_includes\\my-gallery.html",
   "PreviewInSolutionExplorer": false
 }
