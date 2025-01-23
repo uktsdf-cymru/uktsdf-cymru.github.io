@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Gallery.css';
 
 function Gallery() {
 
@@ -18,8 +19,7 @@ function Gallery() {
     }, []);
 
     return (
-        <div className='sectionPage'>
-            <div dangerouslySetInnerHTML={{ __html: galleryHTML }} />
+        <div className='sectionPage' dangerouslySetInnerHTML={{ __html: galleryHTML }}>
         </div>
     );
 }

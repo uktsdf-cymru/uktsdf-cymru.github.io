@@ -5,13 +5,12 @@
     "\\.github\\workflows",
     "\\public",
     "\\public\\blog",
-    "\\public\\_gallery",
-    "\\public\\_gallery\\photos",
+    "\\public\\images",
     "\\public\\_includes",
     "\\public\\_posts",
     "\\src",
     "\\src\\components"
   ],
-  "SelectedNode": "\\public\\_includes\\my-gallery.html",
+  "SelectedNode": "\\public\\images\\tom.png",
   "PreviewInSolutionExplorer": false
 }

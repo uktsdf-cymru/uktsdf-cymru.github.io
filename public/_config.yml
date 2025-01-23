@@ -1,8 +1,7 @@
 # Site settings
 title: ""
 description: ""
-baseurl: "" # Set to the subpath if hosting under a subdirectory
-url: "https://uktsdf-cymru.github.io" # Your GitHub Pages URL
+url: "https://tsdcymru.com" # Your GitHub Pages URL
 
 # Build settings
 markdown: kramdown
