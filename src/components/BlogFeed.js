@@ -5,7 +5,7 @@ function BlogFeed() {
 
     useEffect(() => {
         // Fetch the rendered blog HTML
-        fetch('/blog')
+        fetch('/blog/index.html')
             .then((response) => {
                 if (response.ok) {
                     return response.text();

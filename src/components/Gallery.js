@@ -7,7 +7,7 @@ function Gallery() {
 
     useEffect(() => {
         // Fetch the rendered gallery HTML
-        fetch('/gallery')
+        fetch('/gallery/index.html')
             .then((response) => {
                 if (response.ok) {
                     return response.text();
