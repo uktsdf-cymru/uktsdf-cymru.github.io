@@ -81,7 +81,7 @@ const About = () => {
         const handleVisibility = () => {
             const elements = document.querySelectorAll('.section');
             elements.forEach((el) => {
-                const rect = el.getBoundingClientRect();
+                // const rect = el.getBoundingClientRect();
                 // doesn't work for some reason??
                 //if (rect.top < window.innerHeight) {
                 //    el.classList.add('visible');
