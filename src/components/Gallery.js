@@ -1,25 +1,39 @@
 import React, { useEffect, useState } from 'react';
+import Lightbox from 'react-lightbox-component';
+import 'react-lightbox-component/build/css/index.css';
 import './Gallery.css';
 
 function Gallery() {
-
-    const [galleryHTML, setGalleryHTML] = useState('');
+    const [images, setImages] = useState([]);
 
     useEffect(() => {
-        // Fetch the rendered gallery HTML
         fetch('/gallery/index.html')
-            .then((response) => {
-                if (response.ok) {
-                    return response.text();
-                }
-                throw new Error('Failed to fetch gallery content');
+            .then((response) => response.text())
+            .then((html) => {
+                // Parse the gallery HTML to extract image details
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const imgElements = doc.querySelectorAll('.img-gallery');
+                const imageUrls = Array.from(imgElements).map((img) => ({
+                    src: img.getAttribute('src'),
+                    title: img.getAttribute('alt') || 'Gallery Image',
+                    description: '', // Optional description
+                }));
+                setImages(imageUrls);
             })
-            .then((html) => setGalleryHTML(html))
-            .catch((error) => console.error('Error fetching gallery content:', error));
+            .catch((error) => console.error('Error loading gallery:', error));
     }, []);
 
     return (
-        <div className='sectionPage' dangerouslySetInnerHTML={{ __html: galleryHTML }}>
+        <div className="sectionPage">
+            <h2>Gallery</h2>
+            {images.length > 0 ? (
+                <Lightbox
+                    images={images}
+                />
+            ) : (
+                <p>Loading gallery...</p>
+            )}
         </div>
     );
 }

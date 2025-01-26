@@ -2,25 +2,21 @@
     display: none;
 }
 
-.image-gallery {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+.lightbox-component {
+    display: flex;
     justify-content: center;
-    padding: 4px;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.box {
-    flex-basis: 25%;
-    width: 100%;
-    padding: 10px;
-    margin: 2px;
+.lightbox-backdrop {
+    z-index: 1500 !important;
 }
 
-.img-gallery {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transform: scale(1);
-    transition: all 0.3s ease-in-out; 
+.lightbox-modifiers-box {
+    display: none;
+}
+
+.lightbox-title-content {
+    display: none;
 }
