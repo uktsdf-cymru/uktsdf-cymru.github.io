@@ -223,7 +223,7 @@ function Library() {
                             <td>Turn to rear</td>
                         </tr>
                         <tr>
-                            <td>Bal Cha Gi</td>
+                            <td>Bal Cha Gi Joon Bee</td>
                             <td>Ready for Kick</td>
                         </tr>
                     </tbody>
