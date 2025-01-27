@@ -143,7 +143,7 @@ function Quiz() {
         const correctAnswer = currentQuestion.correctAnswer;
 
         if (currentQuestion.type === "word") {
-            if (arraysEqual(selectedWords, correctAnswer)) {
+            if (arraysEqualInOrder(selectedWords, correctAnswer)) {
                 handleCorrectAnswer();
             } else {
                 setFeedback("Oops, that's not right. Try again!");
@@ -173,6 +173,11 @@ function Quiz() {
             arr1.length === arr2.length &&
             arr1.sort().every((value, index) => value === arr2.sort()[index])
         );
+    };
+
+    // Helper function to compare arrays in exact order
+    const arraysEqualInOrder = (arr1, arr2) => {
+        return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
     };
 
     // Restart the quiz
