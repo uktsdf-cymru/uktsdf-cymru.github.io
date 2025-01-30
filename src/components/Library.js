@@ -258,6 +258,77 @@ function Library() {
                             <td>Ta-Sot</td>
                             <td>Five</td>
                         </tr>
+                        <tr>
+                            <td>Yo-Sot</td>
+                            <td>Six</td>
+                        </tr>
+                        <tr>
+                            <td>Il-Gop</td>
+                            <td>Seven</td>
+                        </tr>
+                        <tr>
+                            <td>Yo-Dol</td>
+                            <td>Eight</td>
+                        </tr>
+                        <tr>
+                            <td>A-Hop</td>
+                            <td>Nine</td>
+                        </tr>
+                        <tr>
+                            <td>Yol</td>
+                            <td>Ten</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Counting</th>
+                            <th>Listing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Il</td>
+                            <td>First</td>
+                        </tr>
+                        <tr>
+                            <td>Ee</td>
+                            <td>Second</td>
+                        </tr>
+                        <tr>
+                            <td>Sam</td>
+                            <td>Third</td>
+                        </tr>
+                        <tr>
+                            <td>Sa</td>
+                            <td>Fourth</td>
+                        </tr>
+                        <tr>
+                            <td>Oh</td>
+                            <td>Fifth</td>
+                        </tr>
+                        <tr>
+                            <td>Yuk</td>
+                            <td>Sixth</td>
+                        </tr>
+                        <tr>
+                            <td>Chil</td>
+                            <td>Seventh</td>
+                        </tr>
+                        <tr>
+                            <td>Pahl</td>
+                            <td>Eighth</td>
+                        </tr>
+                        <tr>
+                            <td>Ku</td>
+                            <td>Nineth</td>
+                        </tr>
+                        <tr>
+                            <td>Sip</td>
+                            <td>Tenth</td>
+                        </tr>
                     </tbody>
                 </table>
 
