@@ -323,7 +323,7 @@ function Library() {
                         </tr>
                         <tr>
                             <td>Ku</td>
-                            <td>Nineth</td>
+                            <td>Ninth</td>
                         </tr>
                         <tr>
                             <td>Sip</td>
@@ -331,22 +331,16 @@ function Library() {
                         </tr>
                     </tbody>
                 </table>
-
+                                                                                      
                 <h2>Technical Terms</h2>
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Term</th>
-                            <th>Definition</th>
-                        </tr>
-                    </thead>
                     <tbody>
                         <tr>
-                            <td>Jok Gi</td>
-                            <td>Foot Techniques</td>
+                            <td>Jok Kee</td>
+                            <td>Foot techniques</td>
                         </tr>
                         <tr>
-                            <td>Mah Kee</td>
+                            <td>Mahk Kee</td>
                             <td>Block</td>
                         </tr>
                         <tr>
@@ -355,14 +349,95 @@ function Library() {
                         </tr>
                         <tr>
                             <td>Ha Dan</td>
-                            <td>Low Section</td>
+                            <td>Low section</td>
                         </tr>
                         <tr>
                             <td>Joong Dan</td>
-                            <td>Middle Section</td>
+                            <td>Middle section</td>
+                        </tr>
+                        <tr>
+                            <td>Sang Dan</td>
+                            <td>High section</td>
+                        </tr>
+                        <tr>
+                            <td>Cha Kee</td>
+                            <td>Kick</td>
+                        </tr>
+                        <tr>
+                            <td>Ki-hap</td>
+                            <td>Shout/yell</td>
+                        </tr>
+                        <tr>
+                            <td>Shi Sun</td>
+                            <td>Focus of eyes</td>
+                        </tr>
+                        <tr>
+                            <td>Jung Shim</td>
+                            <td>Balance</td>
+                        </tr>
+                        <tr>
+                            <td>Kwon Do</td>
+                            <td>Knife fist</td>
+                        </tr>
+                        <tr>
+                            <td>Joong Kwon</td>
+                            <td>Fore fist</td>
+                        </tr>
+                        <tr>
+                            <td>Kap Kwon</td>
+                            <td>Back fist</td>
+                        </tr>
+                        <tr>
+                            <td>IL Ji Kwon</td>
+                            <td>One finger fist</td>
+                        </tr>
+                        <tr>
+                            <td>Yoo Kwon</td>
+                            <td>Soft fist</td>
+                        </tr>
+                        <tr>
+                            <td>Jip Kye Shon</td>
+                            <td>Plier hand</td>
+                        </tr>
+                        <tr>
+                            <td>Soo Do</td>
+                            <td>Knife hand</td>
+                        </tr>
+                        <tr>
+                            <td>Yuk Soo Do</td>
+                            <td>Ridge hand</td>
+                        </tr>
+                        <tr>
+                            <td>Kwan Soo</td>
+                            <td>Spear hand</td>
+                        </tr>
+                        <tr>
+                            <td>IL Ji Kwon Soo</td>
+                            <td>One finger spear hand</td>
+                        </tr>
+                        <tr>
+                            <td>Ee Ji Kwon Soo</td>
+                            <td>Two finger spear hand</td>
+                        </tr>
+                        <tr>
+                            <td>Jang Kwon</td>
+                            <td>Heel of hand</td>
+                        </tr>
+                        <tr>
+                            <td>Son Mok Deung</td>
+                            <td>Upper wrist technique</td>
+                        </tr>
+                        <tr>
+                            <td>Pal Koop</td>
+                            <td>Elbow</td>
+                        </tr>
+                        <tr>
+                            <td>Moo Roop</td>
+                            <td>Knee</td>
                         </tr>
                     </tbody>
                 </table>
+
 
                 <h2>Commands in Starting and Closing Class</h2>
                 <table>
