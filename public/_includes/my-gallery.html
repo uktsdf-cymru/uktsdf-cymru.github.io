@@ -1,5 +1,15 @@
 <div class="image-gallery">
     {% assign sorted = site.static_files | sort: 'date' | reverse %}
+
+    <!-- Debug output for sorted -->
+    <pre>
+    {% for file in sorted %}
+        path: {{ file.path }}
+        extname: {{ file.extname }}
+        modified_time: {{ file.modified_time }}
+    {% endfor %}
+    </pre>
+
     {% for file in sorted %}
     {% if file.path contains include.folder %}
     {% if file.extname == '.png' or file.extname == '.jpg' or file.extname == '.jpeg' %}
