@@ -20,3 +20,20 @@
 .lightbox-title-content {
     display: none;
 }
+
+.album-selector {
+    margin-bottom: 1rem;
+}
+
+.album-selector button {
+    margin-right: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.album-selector button.active {
+    background-color: #ccc;
+    font-weight: bold;
+}
