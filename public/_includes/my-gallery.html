@@ -1,6 +1,7 @@
 <div class="image-gallery">
     {% assign sorted = site.static_files | sort: 'date' | reverse %}
 
+    <p>Debugging stuff follows</p>
     <!-- Debug output for sorted -->
     <pre>
     {% for file in sorted %}
@@ -9,6 +10,7 @@
         modified_time: {{ file.modified_time }}
     {% endfor %}
     </pre>
+    <p>end of debug</p>
 
     {% for file in sorted %}
     {% if file.path contains include.folder %}
