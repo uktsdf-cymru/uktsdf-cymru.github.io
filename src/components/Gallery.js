@@ -45,6 +45,7 @@ function Gallery() {
             <h2>Gallery</h2>
 
             <div className="album-selector">
+                <h3>Albums</h3>
                 {Object.keys(albums).map((albumName) => (
                     <button
                         key={albumName}
@@ -55,7 +56,7 @@ function Gallery() {
                     </button>
                 ))}
             </div>
-
+            <h3>Photos in this Album</h3>
             {albums[currentAlbum]?.length > 0 ? (
                 <Lightbox images={albums[currentAlbum]} />
             ) : (
