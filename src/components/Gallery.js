@@ -20,7 +20,9 @@ function Gallery() {
                     const src = img.getAttribute('src');
                     const title = img.getAttribute('alt') || 'Gallery Image';
                     const match = src.match(/images\/gallery\/([^/]+)/);
-                    const album = match ? match[1] : 'Default';
+                    let album = match ? decodeURIComponent(match[1]) : 'Default';
+                    // Optional: Replace dashes/underscores with spaces and capitalize
+                    album = album.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
                     const image = {
                         src,
